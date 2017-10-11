@@ -20,6 +20,7 @@ var yields = Adapt.dataLayer.findByFile('course/en/course.json');
 yields == [{
   "_id": "course",
   "_type": "course",
+  "_file": "course/en/course.json",
   //...
 }];
 ```
@@ -31,10 +32,12 @@ var yields = Adapt.dataLayer.findByType('article');
 yields == [{
   "_id": "a-05",
   "_type": "article",
+  "_file": "course/en/articles.json",
   //...
 },{
   "_id": "a-10",
   "_type": "article",
+  "_file": "course/en/articles.json",
   //...
 },{
   //...
