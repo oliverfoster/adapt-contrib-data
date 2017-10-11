@@ -9,14 +9,14 @@ One single array containing all of the objects from all of the json files is ass
 
 ## API
 ```js
-Adapt.dataLayer.findByFile(fileName);
-Adapt.dataLayer.findByType(objectType);
+Adapt.dataLoader.findByFile(fileName);
+Adapt.dataLoader.findByType(objectType);
 ```
 
 #### findByFile(fileName)
 Fetches an array of objects listed as originating from the specified file.
 ```js
-var yields = Adapt.dataLayer.findByFile('course/en/course.json');
+var yields = Adapt.dataLoader.findByFile('course/en/course.json');
 yields == [{
   "_id": "course",
   "_type": "course",
@@ -28,7 +28,7 @@ yields == [{
 #### findByType(type)
 Fetches an array of objects with the specified ``_type`` attribute.
 ```js
-var yields = Adapt.dataLayer.findByType('article');
+var yields = Adapt.dataLoader.findByType('article');
 yields == [{
   "_id": "a-05",
   "_type": "article",
