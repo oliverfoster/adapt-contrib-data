@@ -7,7 +7,7 @@ A json file containing an array of objects is concatenated item by item to the a
 The result is that [``config.json``](https://github.com/adaptlearning/adapt_framework/blob/prototype4/src/course/config.json) and [``alllanguages/course.json``](https://github.com/adaptlearning/adapt_framework/blob/prototype4/src/course/en/course.json) are added as single objects into the array, and the objects from [``aticles.json``](https://github.com/adaptlearning/adapt_framework/blob/prototype4/src/course/en/articles.json), [``blocks.json``](https://github.com/adaptlearning/adapt_framework/blob/prototype4/src/course/en/blocks.json) and [``components.json``](https://github.com/adaptlearning/adapt_framework/blob/prototype4/src/course/en/components.json) are subsequently  concatenated to it.  
 One single array containing all of the objects from all of the json files is assembled and can be queried using the API below.  
 
-API
+## API
 ```js
 Adapt.dataLayer.findByFile(fileName);
 Adapt.dataLayer.findByType(objectType);
