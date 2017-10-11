@@ -27,7 +27,7 @@ yields == [{
 #### findByType(type)
 Fetches an array of objects with the specified ``_type`` attribute.
 ```js
-var yields = Adapt.dataLayer.findByFile('course/en/course.json');
+var yields = Adapt.dataLayer.findByType('article');
 yields == [{
   "_id": "a-05",
   "_type": "article",
